@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #222;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(135, 162, 250);
+    padding: 1.5rem;
+}
+.container{
+    background-color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 40rem;
+    min-height: 40rem;
+    border-radius: .4rem;
+}
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(29, 29, 31);
+    text-transform: capitalize;
+}
+.form{
+    margin-top: 6.5rem;
+}
+.input-group{
+    width: 100%;
+    position: relative;
+}
+.form-control{
+    display: block;
+    margin-bottom: 3rem;
+    padding: .8rem;
+    font-size: 1.5rem;
+    color: #222;
+    border: 1px solid #333;
+    width: 100%;
+
+}
+.form-control::placeholder{
+    color: #555;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.fa{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: red;
+}
+.password-visible{
+    color: green;
+}
+.submit-btn{
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgb(135, 162, 250);
+    border: none;
+    border-radius: .4rem;
+}
+.submit-btn:active{
+    scale: 0.98;
+}
+.alternate-text{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+.alternate-text a{
+     color: royalblue;
+}
+.page-body{
+    background-color: rgb(221, 228, 248);
+}
+.main-title{
+    font-size: 3rem;
+    color: rgb(26, 26, 26);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.page-link{
+    font-size: 2rem;
+    text-align: center;
+}
+.error-alert{
+    margin-top: 1rem;
+    background-color: rgb(131, 14, 14);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: none;
+}
+.display-error{
+    display: block;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 248, 248);
+    display: none;
+    place-items: center;
+    z-index: 300;
+    transition: .3s;
+}
+.preloader{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 5px solid rgba(146, 4, 4, 0.274);
+    border-top-color: royalblue;
+    animation: rotate 1s infinite linear;
+}
+.loading{
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.close-overlay{
+    display: none !important;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
